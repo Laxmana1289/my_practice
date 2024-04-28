@@ -1,0 +1,126 @@
+*{
+    padding:0;
+}
+
+:root{
+    --neutral: hsl(210, 46%, 95%);
+}
+
+body{
+    width:1440;
+    background-color: var(--neutral);
+    font-size: 13px;
+    color:white;
+}
+
+#item1{
+    grid-area: first;
+    background-color: hsl(263, 55%, 52%);
+    background-image:url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 80% 0%;
+}
+#item2{
+    grid-area:second;
+    background-color:hsl(217, 19%, 35%);
+}
+#item3{
+    grid-area:three;
+    background-color:hsl(0, 0%, 100%);
+}
+#item4{
+    grid-area: four;
+    background-color:hsl(219, 29%, 14%);
+}
+#item5{
+    grid-area:fifth;
+    background-color:hsl(0, 0%, 100%);
+}
+
+/* .outercontainer{
+    background-color:var(--neutral);
+    display:felx;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+.container{
+    background-color: var(--neutral);
+    display:grid;
+    grid-template-areas: "first first  second fifth"
+                          "three four four fifth";
+    gap:1rem;
+
+    margin:10rem 10rem 10rem 10rem;
+
+}
+
+.item{
+    border-radius: 20px; 
+    /* display:flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+
+h3{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+.about{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    opacity:0.5;
+}
+
+img{
+    border-radius: 100px;
+}
+
+.itemtop{
+    display:flex;
+    gap: 1rem;
+}
+
+/* 
+.namediv{
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+h4{
+    margin-bottom: 0px;
+}
+
+.mt{
+    margin-top:0px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    opacity:0.5;
+}
+
+#fcl{
+    color:hsl(0, 0%, 50%);
+}
+
+#icl{
+    border:2px solid darkblue;
+}
+
+.pad_txt{
+    margin:2rem 2rem 2rem 2rem;
+}
+
+@media(max-width:375px){
+    .container{
+        background-color: var(--neutral);
+        display: flex;
+        flex-direction: column;
+        margin:10rem 3rem 10rem 3rem;
+    
+    }
+}
